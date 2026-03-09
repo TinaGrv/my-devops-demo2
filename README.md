@@ -41,3 +41,13 @@ git push origin v1.0.0
 ```
 
 This triggers the `release_on_tag` job and creates a GitHub release.
+
+## Monitoring add-on
+
+The workflow `.github/workflows/health-monitor.yml` runs every 15 minutes and checks:
+
+```bash
+python app.py --health
+```
+
+If health is not `ok`, the workflow fails, which gives a basic alert-like signal in GitHub Actions.
