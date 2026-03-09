@@ -14,7 +14,7 @@ def get_messages():
 
 def health_check():
     return {
-        "status": "fail",
+        "status": "ok",
         "service": "my-devops-demo2",
         "timestamp": datetime.now(timezone.utc).isoformat(),
     }
