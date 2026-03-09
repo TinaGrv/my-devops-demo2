@@ -11,10 +11,10 @@ Beginner DevOps demo project with:
 - On pushes to `main`: run CI, then CD publishes a Docker image to GitHub Container Registry
 
 Published image:
-- `ghcr.io/<your-github-username>/my-devops-demo:latest`
+- `ghcr.io/<your-github-username>/my-devops-demo2:latest`
 
 Example pull command:
 
 ```bash
-docker pull ghcr.io/<your-github-username>/my-devops-demo:latest
+docker pull ghcr.io/<your-github-username>/my-devops-demo2:latest
 ```
